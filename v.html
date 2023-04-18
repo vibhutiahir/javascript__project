@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+		/* width: 180px; */
+		/* padding: 10px 12px; */
+		/* margin-bottom: 10px; */
+        text-align: center;
+	}
+    .maindiv{
+      display: flex;
+      justify-content: space-evenly;
+        
+    }
+    .div1{
+        padding: 58px 104px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="maindiv">
+    <div id="div1" style="background-color:#a55">
+        <p onclick="swappable()">COLOUM A</p>
+        <p onclick="swappable()">weltech</p>
+        <p onclick="swappable()">tops</p>
+        <p onclick="swappable()">bit</p>
+
+        </div>
+        
+        <div id="div2" style="background-color: #bab1e5">
+        <p onclick="swappable1()">COLOUM B</p>
+        <p onclick="swappable1()">html</p>
+        <p onclick="swappable1()">css</p>
+        <p onclick="swappable1()">javascript</p>
+
+        </div>
+    </div>
+        
+        <script>
+
+function swappable() {
+    let node = document.getElementById("div1").firstElementChild;
+    document.getElementById("div2").appendChild(node);
+}
+
+function swappable1() {
+    let node1 = document.getElementById("div2").firstElementChild;
+    document.getElementById("div1").appendChild(node1);
+}
+
+//show activatybar
+
+        </script>
+</body>
+</html>
